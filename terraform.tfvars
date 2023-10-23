@@ -1,0 +1,6 @@
+#region= "eu-zurich-1"
+#compartment_id = "ocid1.compartment.oc1..aaaaaaaa7r2cqu5hnygevfmhrztzk7x5nckegi7aytkg7qqt7qlzfnit44zq"
+compartment_id = "ocid1.compartment.oc1..aaaaaaaacp2zzqtfmr7hiyiff4wfvs4sglbjy6aljplh2yvs3sl242xyrb6a"
+#tenancy_id="ocid1.tenancy.oc1..aaaaaaaa6yfgaxkv573qdjzpl5pyhlx4aqxgrkud5qz4jbsr4epujxepa7na"
+bucket_name = "rbc-d4c-001-dataflow"
+bucket_namespace = "zrr2g2bttf8t"
