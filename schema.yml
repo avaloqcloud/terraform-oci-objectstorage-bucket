@@ -1,0 +1,35 @@
+schemaVersion: 1.1.0
+locale: "en"
+groupings:
+  - title: "Deploy object storage"
+    variables:
+    - region
+    - compartment_ocid
+    - bucket_name
+    - bucket_namespace
+
+variables:
+  region:
+    type: oci:identity:region:name
+    title: Region
+    description: The OCI region where resources will be created
+    required: true
+
+  compartment_ocid:
+    type: oci:identity:compartment:id
+    title: Target Compartment
+    description: The target compartment id where to create all resources
+    required: true
+  
+  bucket_name:
+    type: string 
+    title: Bucket Name
+    description: The name of the bucket to create
+    required: true
+
+  bucket_namespace:
+    type: string 
+    title: Bucket Namespace
+    description: The name of the bucket namespace
+    required: true
+    default: "zrr2g2bttf8t"
