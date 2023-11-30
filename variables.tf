@@ -1,14 +1,11 @@
-variable "compartment_ocid" {
-  type        = string
-  description = "Compartment OCID"
+variable "bucket" {
+  description = "Bucket input object"
+  type = object({
+    bucket_id	     = optional(string),
+    bucket_name      = string,
+    compartment_ocid = string,
+    bucket_namespace = string,
+  })
 }
 
-variable "bucket_name" {
-  type 	= string
-  description = "Name of the bucket"
-}
 
-variable "bucket_namespace" {
-  type = string
-  description = "Name of the namespace"
-}
