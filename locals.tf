@@ -24,5 +24,5 @@ locals {
   } : {}
   ## Key
    # Either returns the existing or created resource
-  output_bucket = merge(oci_objectstorage_bucket.bucket, data.oci_objectstorage_bucket.existing_resource)
+  output_bucket = merge(oci_objectstorage_bucket.bucket, local.prep_existing_bucket_output)
 }
