@@ -1,5 +1,4 @@
 output "buckets" {
-  value       = local.output_bucket
-#["resource"]
-  description = "Bucket output object."
+   value = local.output_bucket
+   description = "Bucket output object."
 }
